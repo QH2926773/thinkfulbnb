@@ -64,9 +64,13 @@ header {
   color: #fff;
 }
 
-header nav ul {
+header nav {
   display: flex;
   justify-content: center;
+}
+
+header nav ul {
+  display: flex;
 }
 
 header nav ul li {
@@ -90,10 +94,7 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 2px solid #ff385c;
+ border: 2px solid #FF385C;
   padding: 10px;
 }
 
@@ -101,10 +102,15 @@ form label {
   font-weight: bold;
 }
 
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
 form select,
 form input {
   margin-bottom: 20px;
-  width: 65%;
+  width: 140px;
   float: right;
 }
 
@@ -131,22 +137,48 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
   header {
     background-color: #ff385c;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
+  }
+  
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+  
+   form select, form input {
+    margin-bottom: 20px;
+    width: 180px;
   }
 
+  header nav ul {
+    align-items: center;
+  }
+  
   header nav {
     padding: 10px;
   }
-
+  
   form {
-    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form div{
+    flex-direction: column;
   }
 
+  form button {
+    flex: 1;
+  }
+  
   .group {
     display: flex;
     flex-direction: row;

@@ -121,14 +121,23 @@ footer p {
     align-items: center;
   }
   .group {
+    display: flex;
+    flex-direction: column;
+  }
+/*   .group {
     flex-direction: row;
     align-items: center;
-  }
-  form {
+  } */
+/*   form {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  } */
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   form div {
     flex-direction: column;

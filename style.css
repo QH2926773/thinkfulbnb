@@ -128,12 +128,12 @@ footer p {
     flex-direction: row;
     align-items: center;
   }
-/*   form {
+  form {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  } */
+  }
   form {
     display: flex;
     justify-content: space-evenly;
